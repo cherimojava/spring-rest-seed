@@ -1,0 +1,24 @@
+---
+kind: "operation"
+client: "com.atomist:rug"
+version: "1.0.0-20170809213747"
+editor:
+  name: "UpdateTravisBuildScriptEditor"
+  group: "atomist"
+  artifact: "spring-team-handlers"
+  version: "0.9.1"
+  origin:
+    repo: "git@github.com:atomisthq/spring-team-handlers.git"
+    branch: "cef70139861a3dfc5cd1721fb0bc51903afed0f6"
+    sha: "cef7013"
+  parameters:
+    - "scriptContent": "notifications:
+  webhooks:
+    urls:
+      - https://webhook.atomist.com/travis
+    on_success: always
+    on_failure: always
+    on_start: always
+    on_cancel: always
+    on_error: always"
+
